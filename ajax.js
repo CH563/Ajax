@@ -56,7 +56,7 @@ function sendAjax (opt) {
 function getParams (data) {
   var arr = []
   for (var param in data) {
-    arr.push(encodeURIComponent(param) + '=' + +encodeURIComponent(data[param]))
+    arr.push(encodeURIComponent(param) + '=' + encodeURIComponent(data[param]))
   }
   arr.push('v=' + new Date().getTime())
   return arr.join('&')
